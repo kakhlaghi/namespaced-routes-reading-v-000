@@ -9,8 +9,8 @@ Rails.application.routes.draw do
 
   root 'posts#index'
   
-scope '/admin', module: 'admin' do
-  resources :stats, only: [:index]
-end
+  scope '/admin', module: 'admin' do
+    resources :stats, only: [:index]
+  end
 
 end
